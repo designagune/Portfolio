@@ -1,0 +1,205 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background: #272c35;
+    color: #9ba6af;
+    font-size: 0.9rem;
+    position: relative;
+
+    & .title {
+        position: absolute;
+        top: 10px;
+        left: 60%;
+        cursor: default;
+    }
+
+    & .menu {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+
+        & li {
+            list-style: none;
+            margin-right: 9px;
+            cursor: pointer;
+        }
+    }
+}
+
+.body {
+    width: 100%;
+    height: 929px;
+    display: flex;
+
+    & .side {
+        background: #343640;
+        width: 40px;
+        height: 100%;
+
+
+        & ul {
+            margin: 15px 0 0 5px;
+
+            & li {
+                margin-bottom: 20px;
+
+                & img {
+                    width: 27px;
+                    user-select: none;
+                }
+            }
+        }
+
+
+    }
+
+    & .contWrap {
+        width: 100%;
+        background: #27292f;
+
+        & .editList {
+            display: inline-block;
+            color: white;
+            padding: 5px 10px;
+            border: 1px solid #27292f;
+            background: #3d404c;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        & .editmap {
+            font-size: 0.9rem;
+            color: #999;
+            background: #2d3038;
+            padding-left: 15px;
+            padding-bottom: 3px;
+            cursor: default;
+        }
+
+        & .editField {
+            width: 100%;
+            background: #2d3038;
+            height: 800px;
+            box-shadow: -1px 1px 8px -1px #222 inset;
+            position: relative;
+
+            & .focus {
+                display: inline-block;
+                width: 3px;
+                height: 19px;
+                background: white;
+
+                &.fade {
+                    background: transparent;
+                }
+            }
+
+            $cyan: #6cb7c0;
+            $green: #99d62b;
+            $red: #c25e79;
+            $gray: #AAA;
+            $orange: #d99c68;
+            $yellow: #ebbd7a;
+
+            & .text {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                color: white;
+
+                & .arrowFunc {
+                    cursor: pointer;
+                }
+
+                & .line2,
+                & .line3,
+                & .line4,
+                & .line5,
+                & .line6,
+                & .line9,
+                & .line10 {
+                    margin-left: 10px;
+                }
+
+                & .line6 {
+                    & .red {
+                        font-weight: bold;
+                    }
+                }
+
+                & .line8 {
+                    margin-top: 13px;
+                }
+
+                & .cyan {
+                    color: $cyan;
+                }
+
+                & .green {
+                    color: $green;
+                }
+
+                & .red {
+                    color: $red;
+                }
+
+                & .gray {
+                    color: $gray;
+                }
+
+                & .orange {
+                    color: $orange;
+                    font-style: italic;
+                }
+
+                & .yellow {
+                    color: $yellow;
+                }
+
+                & .command {
+                    display: inline-block;
+                    font-weight: bold;
+                }
+
+                & .EnterFunc {
+                    cursor: pointer;
+                }
+
+                & .neuContainer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 50px;
+                    width: 220px;
+
+                    &>.neumorphism {
+                        color: white;
+                        font-weight: bold;
+                        text-decoration: none;
+                        text-align: center;
+                        line-height: 90px;
+                        font-size: 2.7rem;
+                        height: 100px;
+                        width: 200px;
+                        border-radius: 20px;
+                        background: #2d3038;
+                        box-shadow: 20px 20px 40px #202227,
+                            -20px -20px 40px #3b3e49;
+
+                        &:hover {
+
+                            background: linear-gradient(145deg, #30333c, #292b32);
+                        }
+
+                        &:active {
+                            background: linear-gradient(145deg, #292b32, #30333c);
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}

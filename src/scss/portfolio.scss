@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import "./mixin";
+
+@font-face {
+    font-family: Quentin;
+    src: url("./font/Quentin.ttf") format("truetype");
+}
+
+.portTitle {
+    font-family: Quentin;
+    font-weight: normal;
+    font-size: 30rem;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    z-index: 0;
+    opacity: .2;
+    user-select: none;
+    cursor: default;
+}
+
+.portcontWrap {
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+
+    & .portWrap {
+        border: 1px solid #DDD;
+        border-radius: 5px;
+        box-shadow: 1px 1px 15px 1px #DDD;
+        background: #FFF;
+
+        & .portImage {
+            border-bottom: 1px solid #EEE;
+            overflow: hidden;
+
+            & img {
+                width: 100%;
+                transition: ease-in-out .3s all;
+
+                &:hover {
+                    filter: grayscale(1);
+                    transform: scale(1.01);
+                    transition: ease-in-out .3s all;
+                }
+            }
+        }
+
+    }
+
+    &>div {
+        padding: 0 1%;
+        max-width: 480px;
+    }
+
+    & .portTxt {
+        padding: 30px 20px;
+        position: relative;
+
+        &>h3 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        &>p {
+            word-break: break-all;
+        }
+
+        & img {
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            width: 30px;
+        }
+
+    }
+
+
+}
+
+@include mobile {
+    .portcontWrap {
+        flex-wrap: wrap;
+
+        & .portTxt {
+            & h3 {
+                font-size: .9rem;
+                line-height: 45px;
+                margin: 0;
+            }
+
+            padding: 0;
+
+            &>p {
+                display: none;
+            }
+        }
+
+        &>div {
+            max-width: 57%;
+            width: 100%;
+        }
+
+        &>div:first-child,
+        &>div:nth-child(2) {
+            margin-bottom: 10px;
+        }
+    }
+}

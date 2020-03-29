@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    var stringVal = navigator.userAgent;
+    var exp = /Trident/;
+    if (exp.test(stringVal) === true) {
+      alert("Gune's Portfoilo 에서는 Internet Explorer를 지원하지 않습니다. Chrome 다운로드 페이지로 이동합니다.")
+      window.location.href = "https://www.google.com/chrome/";
+    }
+  </script>
+  <title>Gune's Portfolio</title>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
