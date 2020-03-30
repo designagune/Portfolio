@@ -40,4 +40,4 @@ function HomeMain() {
   );
 }
 
-export default HomeMain;
+export default React.memo(HomeMain);

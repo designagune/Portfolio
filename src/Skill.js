@@ -91,4 +91,4 @@ function Skill({ html, js, reactPhp }) {
   );
 }
 
-export default Skill;
+export default React.memo(Skill);

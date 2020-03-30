@@ -18,7 +18,7 @@ function Portcont() {
       image: "./image/portcont2.jpg",
       text:
         "배달의민족 페이지를 리뉴얼하여 앱에서 할수있었던 배달서비스를 웹에서도 이용할 수 있도록 레이아웃 구성...",
-      codelink: "#",
+      codelink: "https://github.com/designagune/baemin",
       pagelink: "http://set555.dothome.co.kr/baemin"
     },
     {
@@ -27,7 +27,7 @@ function Portcont() {
       image: "./image/portcont3.jpg",
       text:
         "공공데이터 포탈의 데이터로 전국의 관광정보를 다양하게 알아볼 수있는 페이지...",
-      codelink: "#",
+      codelink: "https://github.com/designagune/Tourism-service",
       pagelink: "http://flexcode.dothome.co.kr/donggun/"
     }
   ];
@@ -58,4 +58,4 @@ function Portcont() {
   );
 }
 
-export default Portcont;
+export default React.memo(Portcont);

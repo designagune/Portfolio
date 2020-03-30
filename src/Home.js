@@ -47,17 +47,12 @@ function Home(props) {
     reactReset
   ]);
 
-  const onafterFunc = useCallback(() => {
+  const onafterFunc = () => {
     console.log("onafterfunc");
     htmlStart();
     jsStart();
     reactStart();
-  }, [
-    //props.location.hash.match(/[^\#]+/g)[0] === "SKILL",
-    htmlStart,
-    jsStart,
-    reactStart
-  ]);
+  };
 
   return (
     <ReactFullpage
