@@ -1,3 +1,5 @@
+@import "./mixin";
+
 header {
     display: flex;
     align-items: center;
@@ -201,5 +203,35 @@ header {
 
             }
         }
+    }
+}
+
+@include mobile {
+    .body .contWrap .editField .text .neuContainer {
+        margin-top: 40px;
+    }
+
+    header .title {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    header .menu {
+        display: none;
+    }
+
+    .body {
+        height: calc(100vh - 40px);
+        overflow: hidden;
+    }
+
+    .body .side {
+        height: calc(100vh - 40px);
+    }
+
+    .body .contWrap .editField {
+        height: calc(100vh - 40px);
     }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./scss/preview.scss";
 import Command from "./Command";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Interval = setInterval(() => {
   const focus = document.querySelector(".focus");
@@ -12,6 +12,11 @@ const Interval = setInterval(() => {
 }, 500);
 
 function Preview() {
+  const history = useHistory();
+  window.addEventListener("keypress", key => {
+    if (key.keyCode === 13) history.push("/index");
+  });
+
   return (
     <>
       <header>
@@ -123,7 +128,7 @@ function Preview() {
                   </div>
                   <div className="line9">
                     <span className="gray">domain :</span>
-                    <span className="yellow"> "https://blabla.com" </span>
+                    <span className="yellow"> "http://gun-e.com" </span>
                     <span className="gray">,</span>
                   </div>
                   <div className="line10">
