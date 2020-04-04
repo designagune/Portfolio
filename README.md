@@ -27,6 +27,5 @@
 
 ## 개선점
 
-- Optimization ( Rerendering prevention )
 - Code Refactoring
-- where will project release ..
+- ssl
